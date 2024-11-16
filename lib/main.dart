@@ -3,6 +3,7 @@ import 'package:wisata_candi/data/candi_data.dart';
 import 'package:wisata_candi/screens/detail_screen.dart';
 import 'package:wisata_candi/screens/profile_screen.dart';
 import 'package:wisata_candi/screens/signin_screen.dart';
+import 'package:wisata_candi/screens/signup_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -32,12 +33,13 @@ class _MainAppState extends State<MainApp> {
           colorScheme:
               ColorScheme.fromSeed(seedColor: Colors.deepPurple).copyWith(
             primary: Colors.deepPurple,
-            surface: Colors.deepPurple[50],
+            surface: const Color.fromRGBO(237, 231, 246, 1),
           ),
           useMaterial3: true),
       // home: DetaiScreen(candi: candiList[0]),
       // home: const ProfileScreen(),
-      home: SignInScreen(),
+      // home: SignInScreen(),
+      home: SignUpScreen(),
     );
   }
 }
